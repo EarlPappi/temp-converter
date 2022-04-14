@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+body {
+  height: 100vh;
+  background-color: #caf0f8;
+}
+@media (max-width: 746px) {
+  body {
+    padding-top: 15%;
+  }
+}
+@media (min-width: 747px) {
+  body {
+    background-color: #03045e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+  }
+  body .wrapper {
+    width: 70%;
+    height: 65%;
+    background-color: #caf0f8;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+  }
+}
+
+.wrapper {
+  display: flex;
+  padding-top: 30px;
+  width: 90%;
+  margin: 0 auto;
+  flex-direction: column;
+}
+.wrapper fieldset {
+  border-color: #03045e;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: azure;
+}
+.wrapper fieldset legend {
+  color: #03045e;
+}
+.wrapper fieldset input,
+.wrapper fieldset select {
+  width: 90%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-color: rgba(190, 190, 190, 0.274);
+}
+.wrapper fieldset input :hover,
+.wrapper fieldset select :hover {
+  color: white;
+  background-color: #03045e;
+}
+.wrapper fieldset input option:hover,
+.wrapper fieldset select option:hover {
+  color: white;
+  background-color: #03045e;
+}
+.wrapper fieldset input :focus,
+.wrapper fieldset input :active,
+.wrapper fieldset select :focus,
+.wrapper fieldset select :active {
+  outline: none;
+}
+.wrapper .input-con button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background-color: #03045e;
+  color: white;
+  margin-top: 40px;
+  border-radius: 5px;
+  font-weight: 700;
+  border: none;
+}
+.wrapper .input-con button:hover {
+  outline: 2px solid #03045e;
+  color: #03045e;
+  background-color: transparent;
+  border-radius: 5px;
+}
+@media (max-width: 746px) {
+  .wrapper .output-con {
+    margin-top: 30px;
+    color: white;
+    background-color: #03045e;
+    height: max-content;
+    color: white;
+    padding-bottom: 30px;
+  }
+}
+.wrapper .output-con p {
+  font-size: 5em;
+  text-align: center;
+  font-weight: 700;
+  padding-top: 30px;
+}
+@media (min-width: 747px) {
+  .wrapper .output-con p {
+    font-size: 7em;
+    height: 70%;
+    margin-bottom: 20px;
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.459);
+    border-radius: 10px;
+  }
+}
+.wrapper .output-con span {
+  display: block;
+  width: 80%;
+  background-color: white;
+  color: #03045e;
+  font-weight: 400;
+  font-style: italic;
+  padding: 5px;
+  margin: 0 auto;
+  text-align: center;
+}
+@media (min-width: 747px) {
+  .wrapper .output-con span {
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+@media (min-width: 747px) {
+  .wrapper {
+    flex-direction: row;
+    padding: 0;
+    justify-content: space-between;
+  }
+  .wrapper .input-con {
+    margin: 0;
+    background-color: white;
+    width: 50%;
+    padding: 30px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  .wrapper .input-con fieldset {
+    margin-bottom: 40px;
+  }
+  .wrapper .output-con {
+    margin: 0;
+    width: 50%;
+    background-color: aqua;
+    padding: 30px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+}
+
+legend {
+  font-weight: 100;
+  font-style: italic;
+  font-size: 0.8em;
+}
+
+/*# sourceMappingURL=index.css.map */

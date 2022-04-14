@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperatur Converter</title>
+
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="input-con">
+            <fieldset>
+                <legend for="input-value">Enter input value</legend>
+                <input type="number" id="input-value">
+            </fieldset>
+
+            <fieldset>
+                <legend for="input-unit">Select input unit</legend>
+                <select name="input-unit" id="input-unit">
+                    <option value="c" selected>Celsius</option>
+                    <option value="f">Fahrenheit</option>
+                    <option value="k">Kelvin</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend for="output-unit">Select output unit</legend>
+                <select name="output-unit" id="output-unit">
+                    <option value="c">Celsius</option>
+                    <option value="f">Fahrenheit</option>
+                    <option value="k">Kelvin</option>
+                </select>
+            </fieldset>
+            <hr>
+            <button id="convert">Convert</button>
+        </div>
+
+        <div class="output-con">
+            <p id="output-value">0</p>
+            <span id="output-unit-dec">Fahrenheit</span>
+
+
+        </div>
+    </div>
+
+
+
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
